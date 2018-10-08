@@ -1,0 +1,26 @@
+{
+  "name": "ts-node",
+  "version": "1.0.0",
+  "description": "A small project just trying out typescript on in the backend. Using typescript to write a nodejs app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lemmah/ts-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lemmah/ts-node/issues"
+  },
+  "homepage": "https://github.com/Lemmah/ts-node#readme",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "typescript": "^3.1.1"
+  }
+}
