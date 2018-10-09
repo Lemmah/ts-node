@@ -4,8 +4,8 @@ A small project just trying out typescript on in the backend. Using typescript t
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-- Just clone this repository by typing: `git clone https://github.com/Lemmah/ts-node.git`
-- Switch to project directory: `cd ts-node`
+- Just clone this repository by typing: `git clone https://github.com/Lemmah/ts-node-api.git`
+- Switch to project directory: `cd ts-node-api`
 - Install packages by running `npm install`. Wait, you have to have some stuff before you get to this point. So these are:
 
 ### Prerequisites
