@@ -20,8 +20,8 @@ in your terminal and if its not greater than or equal to v8.12.0, you're not in 
 - TypeScript
 
 ### Installing
-
-All packages are installed by `npm install`.
+You will need to install the following packages globally using npm: `typescript`, `ts-node`, `concurrent`, `mocha`.
+All application packages are installed by `npm install`.
 Run `npm run dev` to start a development server using `ts-node`. Visit `localhost:4040`
 
 
