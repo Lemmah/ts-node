@@ -1,13 +1,17 @@
 {
-  "name": "ts-node",
+  "name": "ts-node-api",
   "version": "1.0.0",
   "description": "A small project just trying out typescript on in the backend. Using typescript to write a nodejs app.",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node ./lib/server.ts",
     "start": "node ./dist/server.js",
-    "prod": "npm run build && npm start"
+    "prod": "npm run build && npm start",
+    "watch-tests": "mocha --watch \"dist/spec/*.js\"",
+    "watch-ts": "tsc -w",
+    "watch-node": "nodemon dist/server.js",
+    "start-dev": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node, Tests\" -c \"yello.bold, cyan.bold\" \"npm run watch-ts\" \"npm run watch-node\" \"npm run watch-tests\"",
+    "test": "mocha -r ts-node/register lib/spec/*.ts"
   },
   "repository": {
     "type": "git",
@@ -21,9 +25,17 @@
   },
   "homepage": "https://github.com/Lemmah/ts-node#readme",
   "dependencies": {
-    "@types/express": "^4.16.0",
     "body-parser": "^1.18.3",
-    "express": "^4.16.3",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/chai-http": "^3.0.5",
+    "@types/express": "^4.16.0",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
     "typescript": "^3.1.1"
   }
 }
